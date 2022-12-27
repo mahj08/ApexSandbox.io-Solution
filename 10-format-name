@@ -1,4 +1,5 @@
 public String formatName(String firstName, String lastName) {
+    String formattedName;
     if(firstName != null && lastName != null){
         formattedName = lastName + ', ' + firstName;
         return formattedName;
