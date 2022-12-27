@@ -1,8 +1,8 @@
 public Boolean isTeenager(Integer age) {
     if(age>13 && age <19){
-        isTeenager = true;
+        System.debug('true');
     }
     else{
-        isTeenager = false;
+        System.debug('false');
     }
 }
