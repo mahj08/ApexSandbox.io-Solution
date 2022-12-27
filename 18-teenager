@@ -1,8 +1,0 @@
-public Boolean isTeenager(Integer age) {
-    if(age>13 && age <19){
-        System.debug('isTeenager'+'('+age+') = true')
-    }
-    else{
-        System.debug('isTeenager'+'('+age+') = false')
-    }
-}
