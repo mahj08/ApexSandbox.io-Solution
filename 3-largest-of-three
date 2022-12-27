@@ -1,5 +1,5 @@
 public static Integer findLargest(Integer num1, Integer num2, Integer num3) {
-    List<Integer> num = new List<Integer>{num1,num2,num3};
+    Integer[] num = new List<Integer>{num1,num2,num3};
     num.sort();
-    return num[3];
+    return num[2];
 }
