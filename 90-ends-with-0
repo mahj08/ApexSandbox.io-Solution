@@ -1,5 +1,5 @@
 public Boolean isEndWithZero(Integer num){
-     if(num.isEndWithZero){
+     if(Math.mod(0)){
          return true;
      }
      return false;
