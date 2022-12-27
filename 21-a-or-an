@@ -1,9 +1,9 @@
 public String aOrAn(String word) {
-   String vowel = word.startsWith('a');
+   Boolean vowel = word.startsWith('a');
    if( vowel = true){
-       return 'an';
+       return an;
    }
    else{
-       return 'a';
+       return a;
    }
 }
