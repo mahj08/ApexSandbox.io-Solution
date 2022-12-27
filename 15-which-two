@@ -1,14 +1,17 @@
 public String whichTwo(Integer a, Integer b, Integer c) {
-    if(a + b == c){
-        return c;
+    Integer x = IntegerValueOf(a);
+    Integer y = IntegerValueOf(b);
+    Integer z = IntegerValueOf(c);
+    if(x + y == z){
+        return z;
     }
-    else if (a + c == b){
-        return b;
+    else if (x + z == y){
+        return y;
     }
-    else if(b + c == a){
-        return a;
+    else if(y + z == x){
+        return x;
     }
     else{
-        return '';
+        return null;
     }
 }
