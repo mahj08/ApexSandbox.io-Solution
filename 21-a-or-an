@@ -1,9 +1,12 @@
 public String aOrAn(String word) {
-   Boolean vowel = word.startsWith('a');
-   if( vowel = true){
-       return an;
+   if( word.startsWith('a') ||
+       word.startsWith('e') ||
+       word.startsWith('i') ||
+       word.startsWith('o') ||
+       word.startsWith('u') ||){
+       return 'an' + word;
    }
    else{
-       return a;
+       return 'a' + word;
    }
 }
