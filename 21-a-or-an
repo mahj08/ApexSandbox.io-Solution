@@ -1,5 +1,5 @@
 public String aOrAn(String word) {
-   Boolean vowel = word.startsWith('a');
+   Boolean vowel = word.startsWithIgnoreCase('a');
    if( vowel = true){
        return 'an';
    }
