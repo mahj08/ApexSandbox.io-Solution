@@ -2,6 +2,7 @@ public String changeTimeFormat(String strTime) {
     String strHour = strTime.substringBefore(':');
     String strMins = strTime.substringAfter(':');
     Integer intHour = Integer.ValueOf(strHour);
+    String strTimeFormatted = strHour + ':' + strMins + 'PM';
 
-    return strTime;
+    return strTimeFormatted;
 }
