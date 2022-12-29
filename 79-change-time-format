@@ -5,6 +5,20 @@ public String changeTimeFormat(String strTime) {
     String strTimeFormat, strHourNew, strTimeFormatted;
     Integer intHourNew;
     
+    if(intHour >= 0 && intHour < 12){
+        strTimeFormat = 'AM';
+        strHourNew = strHour;
+    }
+    else if (intHour > 12 && intHour != 0){
+        strTimeFormat = 'PM';
+        intHourNew = intHour - 12;
+        strHourNew = String.ValueOf(intHourNew);
+    }
+    else{
+        strTimeFormat = 'PM'
+        strHourNew = strHour;
+    }
+    
     strTimeFormatted = strHourNew + ':' strMins + ' ' + strTimeFormat; 
-    return strTimeFormatted;
+    return strTimeFormatted();
 }
