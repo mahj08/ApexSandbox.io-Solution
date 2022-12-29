@@ -2,11 +2,6 @@ public String changeTimeFormat(String strTime) {
     String strHour = strTime.substringBefore(':');
     String strMins = strTime.substringAfter(':');
     Integer intHour = Integer.ValueOf(strHour);
-    String strTimeFormat;
-    String strHourNew;
-    String strTimeFormatted = strHour + ':' + strMins + 'AM';
-    Integer intHourNew;
-    
-    strTimeFormatted = 
-    return strTimeFormatted();
+
+    return strTime;
 }
