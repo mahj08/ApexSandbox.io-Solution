@@ -4,9 +4,9 @@ public String changeTimeFormat(String strTime) {
     Integer intHour = Integer.ValueOf(strHour);
     String strTimeFormat;
     String strHourNew;
-    String strTimeFormatted;
+    String strTimeFormatted = strHour + ':' + strMins + 'AM';
     Integer intHourNew;
     
-    strTimeFormatted = strHour + ':' + strMins + 'AM';
+    strTimeFormatted = 
     return strTimeFormatted();
 }
