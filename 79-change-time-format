@@ -1,7 +1,7 @@
 public String changeTimeFormat(String strTime) {
     String strHour = strTime.substringBefore(':');
     String strMins = strTime.substringAfter(':');
-    Integer intHour = integer.valueOf(strHour);
+    Integer intHour = Integer.ValueOf(strHour);
     String strTimeFormat, strHourNew;
     Integer intHourNew;
     if(intHour >= 0 && intHour < 12){
@@ -11,7 +11,7 @@ public String changeTimeFormat(String strTime) {
     else if (intHour > 12 && intHour != 0){
         strTimeFormat = 'PM';
         intHourNew = intHour - 12;
-        strHourNew = string.valueOf(intHourNew);
+        strHourNew = String.ValueOf(intHourNew);
     }
     else{
         strTimeFormat = 'PM'
