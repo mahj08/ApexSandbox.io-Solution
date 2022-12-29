@@ -18,3 +18,4 @@ public String changeTimeFormat(String strTime) {
         strHourNew = strHour;
     }
     return strHourNew + ':' strMins + ' ' + strTimeFormat; 
+}
