@@ -4,5 +4,5 @@ public Id insertStudent(String name, String email) {
     apx.Name = name;
     apx.apxio__Email__c = email;
     apxList.add(apx);
-    insert(apxList);
+    Database.insert(apxList);
 }
