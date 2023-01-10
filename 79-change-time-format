@@ -17,6 +17,9 @@ public String changeTimeFormat(String strTime) {
         hours = 12;
     }
 
-    return String.ValueOf(hours) + ":" + String.ValueOf(mins) + suffix;
+    String strHours = String.valueOf(hours);
+    if (strHours.length() == 1) strHours = '0' + strHours;
+
+    return strHours + ':' + parts[1] + suffix;
  
 }
