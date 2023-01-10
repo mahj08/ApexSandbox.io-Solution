@@ -7,6 +7,15 @@ public String changeTimeFormat(String strTime) {
     if(hours == 12){
         suffix = ' PM';
     }
+    
+    if(hours >= 12){
+        suffix = ' PM';
+        hours -= 12;
+    }
+    
+    if(hours == 0){
+        hours = 12;
+    }
 
     return String.ValueOf(hours) + ":" + String.ValueOf(mins) + suffix;
  
