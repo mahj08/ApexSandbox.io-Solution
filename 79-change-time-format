@@ -2,7 +2,7 @@ public String changeTimeFormat(String strTime) {
     String parts = strTime.split(':');
     Integer hours = Integer.ValueOf(parts[0]);
     Integer mins = Integer.ValueOf(parts[1]);
-    String format;
+    String format = 'AM';
     String hoursFormatted;
     if(hours = 0){
         format = 'AM';
