@@ -5,4 +5,5 @@ public Id insertStudent(String name, String email) {
     apx.apxio__Email__c = email;
     apxList.add(apx);
     Database.insert(apxList);
+    return apx.Id;
 }
