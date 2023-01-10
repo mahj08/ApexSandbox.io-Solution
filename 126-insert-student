@@ -1,11 +1,8 @@
 public Id insertStudent(String name, String email) {
     List<apxio__Student__c> apxList = new List<apxio__Student__c>();
     apxio__Student__c apx = new apxio__Student__c();
-    apx.Name = 'Francis Dela Cruz';
-    apx.apxio__Phone__c = 12345678;
-    apx.apxio__Email__c = 'fdc@example.com';
-    apx.apxio__Home_Planet__c = 'Venus';
-    apx.apxio__Cumulative_GPA__c = 1.23;
+    apx.Name = name;
+    apx.apxio__Email__c = 'email;
     apxList.add(apx);
     if(!apxList.isEmpty()){
         Database.insert(apxList);
