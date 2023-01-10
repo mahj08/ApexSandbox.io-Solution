@@ -2,24 +2,12 @@ public String changeTimeFormat(String strTime) {
     String parts = strTime.split(':');
     Integer hours = Integer.ValueOf(parts[0]);
     Integer mins = Integer.ValueOf(parts[1]);
-    String format = 'AM';
-    String hoursFormatted;
-    if(hours = 0){
-        format = 'AM';
-        hoursFormatted = '12';
+    String suffix = ' AM';
+
+    if(hours == 12){
+        suffix = ' PM';
     }
-    else if (hours > 0 && hours < 12){
-        format = 'AM';
-        hoursFormatted = String.ValueOf(hours);
-    }
-    else if(hours == 12){
-        format = 'PM';
-        hoursFormatted = String.ValueOf(hours);
-    }
-    else{
-        format = 'PM';
-        hoursFormatted = String.ValueOf(hours - 12);
-    }
-    }
-    return hoursFormatted + ':' + String.ValueOf(mins) + ' ' + format;
+
+    return String.ValueOf(hours) + ":" + String.ValueOf(mins) + suffix;
+ 
 }
