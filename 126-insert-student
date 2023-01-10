@@ -2,7 +2,7 @@ public Id insertStudent(String name, String email) {
     List<apxio__Student__c> apxList = new List<apxio__Student__c>();
     apxio__Student__c apx = new apxio__Student__c();
     apx.Name = name;
-    apx.apxio__Email__c = 'email;
+    apx.apxio__Email__c = email;
     apxList.add(apx);
     if(!apxList.isEmpty()){
         Database.insert(apxList);
