@@ -2,8 +2,8 @@ public Id insertCourse(String name, String details, Integer credits) {
     List<apxio__Course__c> courseList = new List<apxio__Course__c>();
     apxio__Course__c course = new apxio__Course__c();
     course.Name = name;
-    course.apxio__Course_Details__c = 'Put Course Details Here';
-    course.apxio__Credits__c = 1;
+    course.apxio__Course_Details__c = details;
+    course.apxio__Credits__c = credits;
     courseList.add(course);
     if(!courseList.isEmpty){
         Database.insert(courseList);
