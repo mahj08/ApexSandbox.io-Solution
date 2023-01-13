@@ -6,7 +6,7 @@ public void createCourseAndClass(String name, String description) {
     }
     Database.insert(newCourse);
 
-    List<apxio__Course__c> courseList = [SELECT Id FROM apxio__Course__c WHERE Name =: name AND apxio__Course_Details__c =: description];
+    List<apxio__Course__c> courseList = [SELECT Id FROM apxio__Course__c WHERE Name = name AND apxio__Course_Details__c = description];
 
     if(!courseList.isEmpty){
         apxio__Class__c newClass = new apxio__Class__c();
