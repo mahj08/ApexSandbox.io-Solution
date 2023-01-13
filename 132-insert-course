@@ -5,5 +5,7 @@ public Id insertCourse(String name, String details, Integer credits) {
     course.apxio__Course_Details__c = details;
     course.apxio__Credits__c = String.ValueOf(credits);
     Database.insert(course);
-    return course.Id;
+    if(course.Id != null){
+        return course.Id;
+    }
 }
